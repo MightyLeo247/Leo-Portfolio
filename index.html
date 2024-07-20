@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3c149c43e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo (500x500).jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-solid fa-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa fa-solid fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="headertext">
+                <p>Frontend Designer</p>
+                <h1>Hi, I'm <span>Olupinla</span><br> Oluwagbenga From Nigeria</h1>
+            </div>
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Images/user (360x640).jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a Frontend web developer. 
+                        I'm highly experienced in coding with CSS,HTML and Javascript.
+                        <br>
+                        I have carried out variety of projects like; a form and also a tribute webpage.
+                        <br>
+                        I'm always looking for new challenges and opportunities to grow,
+                        and i believe that my skills and experience would be a valuable asset to my team.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Web Developer</span><br>Designing Web Interfaces</li>
+                            <li><span>Graphic Designer</span><br>Designing flyers,logos and banners</li>
+                            <li><span>Gaming Content Creator</span><br>Play and Upload Game Videos and Tutorials</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-Till Date</span><br>Frontend web training at Digital Fotress Institute</li>
+                            <li><span>2021-2022</span><br>Freelancer on Canva</li>
+                            <li><span>2015-2021</span><br>Student at Emmagrace College</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Frontend web training at Digital Fotress Institute</li>
+                            <li><span>2022</span><br>Graphic Designing on Canva</li>
+                            <li><span>2021</span><br>SSCE at Emmagrace College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1> 
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                      I'm a talented web designer who specializes in creating visually stunning,
+                      user-friendly websites that effectively showcase your brand and communicate your message.
+                      Whether you are a small startup or a large corporation, i will work with you to create a
+                      unique, custom-designed website that meets your specific needs and exceeds your expectation.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-marker"></i>
+                    <h2>Graphic Design</h2>
+                    <p>
+                        My graphic design services range from logo and branding design to product packaging,
+                        marketing materials, and more. I understand the importance of visual appeal,
+                        and i'm committed to creating eye-catching graphics that capture the essence of your brand
+                         and covey your message effectively. Let me help you make a lasting impression on your audience.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad"></i> 
+                    <h2>Gaming Content Creation</h2>
+                    <p>
+                       At my gaming content creation studio, I specialize in crafting unique 
+                       and engaging gaming experiences. Let me help you create captivating gaming videos
+                        that stand out from the crowd, with stunning visuals, immersive story lines, 
+                        and innovative gameplay mechanics.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./Images/guessinggame (640x480).jpg">
+                    <div class="layer">
+                        <h3>Guessing Game Website</h3>
+                        <p>You try your luck guessing numbers.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/Meal Business Flyer (452x640).jpg">
+                    <div class="layer">
+                        <h3>Resturant Flyer</h3>
+                        <p>You get full info about the resturant's menu.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/tribute (640x480).jpg">
+                    <div class="layer">
+                        <h3>Tribute Page</h3>
+                        <p>Biography Of Late Dr Norman.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a> 
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+               <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    olupinlaoluwagbenga@gmail.com
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +234-8132-93-6929
+                </p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="./Olupinla OLUWAGBENGA IFEMIDE CV.pdf" download class="btn btn2">Download CV</a>
+               </div> 
+                <div class="contact-right"></div>
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©Leo's Design 2024.</p>
+        </div>
+    </div>
+
+  
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>  
+
+  <script>
+     
+    var sidemenu= document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+  </script>
+
+</body>
+</html>
